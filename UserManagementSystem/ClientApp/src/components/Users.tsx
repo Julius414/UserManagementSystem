@@ -48,6 +48,7 @@ class Users extends React.PureComponent<WeatherForecastProps> {
             <th>Name</th>
             <th>Phone Number</th>
             <th>Duties</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -57,6 +58,7 @@ class Users extends React.PureComponent<WeatherForecastProps> {
               <td>{forecast.userName}</td>
               <td>{forecast.phoneNumber}</td>
               <td>{forecast.duties}</td>
+              <td><Link className='btn btn-outline-secondary btn-sm' to={`/edit`}>Edit</Link></td>
             </tr>
           )}
         </tbody>
